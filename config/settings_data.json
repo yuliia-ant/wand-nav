@@ -1,5 +1,18 @@
 {
   "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "title": "",
+          "logo": "shopify:\/\/shop_images\/1.svg",
+          "logo_width": 100,
+          "header-menu": "main-menu",
+          "sidebar-menu": "main-menu",
+          "sidebar-footer": "main-menu"
+        }
+      }
+    },
     "content_for_index": [
 
     ]
