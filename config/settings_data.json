@@ -4,12 +4,12 @@
       "header": {
         "type": "header",
         "settings": {
-          "title": "Header",
+          "title": "",
           "logo": "shopify:\/\/shop_images\/1.svg",
           "logo_width": 100,
-          "header-menu": "header-menu",
-          "sidebar-menu": "sidebar-menu",
-          "sidebar-footer": "sidebar-footer"
+          "header-menu": "main-menu",
+          "sidebar-menu": "main-menu",
+          "sidebar-footer": "main-menu"
         }
       }
     },
