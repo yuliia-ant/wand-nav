@@ -28,4 +28,10 @@
   &__item {
     height: 40px;
   }
+
+  &__link {
+    &__child-list.hidden {
+      display: none;
+    }
+  }
 }

@@ -39,7 +39,7 @@
   <div class="sidebar-nav">
     <ul class="sidebar-nav__list">
       {% for link in linklists.sidebar-menu.links %}
-        {%- render 'sidebar-nav', link: link -%}
+        {%- render 'sidebar-nav', linklists: linklists -%}
       {% endfor %}
     </ul>
   </div>

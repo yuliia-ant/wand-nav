@@ -6,3 +6,12 @@
     </div>
   </a>
 </li>
+{% if link.links != blank %}
+  <ul class="sidebar-nav__link__child-list hidden">
+    {% for child_link in link.links %}
+      <li class="sidebar-nav__link__child-item">
+        <a href="{{ child_link.url }}" class="sidebar-nav__link__child-link">{{ child_link.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
