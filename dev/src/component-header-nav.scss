@@ -1,0 +1,72 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  &__list {
+    display: none;
+    @include onDesktop() {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 16px;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    height: 15px;
+
+    &--burger {
+      @include onDesktop() {
+        display: none;
+      }
+    }
+    &--user {
+      display: none;
+      @include onDesktop() {
+        display: block;
+      }
+    }
+
+    &--cart {
+      @include onDesktop() {
+        display: none;
+      }
+    }
+
+    &--cart-desktop {
+      display: none;
+      @include onDesktop() {
+        display: block;
+      }
+    }
+  }
+}

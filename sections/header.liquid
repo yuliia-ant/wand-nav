@@ -1,0 +1,25 @@
+{{ 'section-header.css' | asset_url | stylesheet_tag }}
+{{ 'component-header-nav.css' | asset_url | stylesheet_tag }}
+
+<div class="header">
+  <a href="/" class="header__logo">
+    {%- render 'icon-logo' -%}
+  </a>
+  <div class="header__nav-wrapper">
+    {%- render 'header-nav' -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Header",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ]
+}
+{% endschema %}
