@@ -1,11 +1,18 @@
 {
   "sections": {
     "main": {
-      "type": "header",
-      "settings": {}
+      "type": "home",
+      "settings": {
+      }
+    },
+    "promo-banner": {
+      "type": "promo-banner",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "promo-banner"
   ]
 }

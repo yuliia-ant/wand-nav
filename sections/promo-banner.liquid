@@ -1,0 +1,15 @@
+<div>Promo Banner</div>
+<img src="{{ section.settings.promo_banner_image }}" alt="promo-image">
+
+{% schema %}
+{
+  "name": "Promo-banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "promo_banner_image",
+      "label": "Promo-banner image"
+    }
+  ]
+}
+{% endschema %}
