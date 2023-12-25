@@ -8,6 +8,7 @@
     "promo-banner": {
       "type": "promo-banner",
       "settings": {
+        "promo_banner_image": "shopify:\/\/shop_images\/Screenshot_2023-12-13_at_20.56_1.png"
       }
     }
   },
