@@ -1,5 +1,9 @@
-<div>Promo Banner</div>
-<img src="{{ section.settings.promo_banner_image }}" alt="promo-image">
+{{ 'section-promo-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="promo-banner">
+  {% render 'image-lazy', image: section.settings.promo_banner_image, class: 'promo-banner__image' %}
+  {% comment %} <img src="{{ section.settings.promo_banner_image | img_url:'master' }}" alt="1"> {% endcomment %}
+</div>
 
 {% schema %}
 {
